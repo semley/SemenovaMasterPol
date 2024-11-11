@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище Semenova_МастерПолModelContainer" CdmEntityContainer="Semenova_МастерПолEntities">
+    <EntitySetMapping Name="Material">
+      <EntityTypeMapping TypeName="Semenova_МастерПолModel.Material">
+        <MappingFragment StoreEntitySet="Material">
+          <ScalarProperty Name="Material_ID" ColumnName="Material_ID" />
+          <ScalarProperty Name="MaterialType_ID" ColumnName="MaterialType_ID" />
+          <ScalarProperty Name="Material_Name" ColumnName="Material_Name" />
+          <ScalarProperty Name="Count_Packaging" ColumnName="Count_Packaging" />
+          <ScalarProperty Name="Unit_Measurement" ColumnName="Unit_Measurement" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MaterialCountHistory">
+      <EntityTypeMapping TypeName="Semenova_МастерПолModel.MaterialCountHistory">
+        <MappingFragment StoreEntitySet="MaterialCountHistory">
+          <ScalarProperty Name="MaterialCountHistory_ID" ColumnName="MaterialCountHistory_ID" />
+          <ScalarProperty Name="Material_ID" ColumnName="Material_ID" />
+          <ScalarProperty Name="Change_Date" ColumnName="Change_Date" />
+          <ScalarProperty Name="Count_Value" ColumnName="Count_Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MaterialProduct">
+      <EntityTypeMapping TypeName="Semenova_МастерПолModel.MaterialProduct">
+        <MappingFragment StoreEntitySet="MaterialProduct">
+          <ScalarProperty Name="Material_ID" ColumnName="Material_ID" />
+          <ScalarProperty Name="Product_ID" ColumnName="Product_ID" />
+          <ScalarProperty Name="Count" ColumnName="Count" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MaterialType">
+      <EntityTypeMapping TypeName="Semenova_МастерПолModel.MaterialType">
+        <MappingFragment StoreEntitySet="MaterialType">
+          <ScalarProperty Name="MaterialType_ID" ColumnName="MaterialType_ID" />
+          <ScalarProperty Name="MaterialType1" ColumnName="MaterialType" />
+          <ScalarProperty Name="Defect" ColumnName="Defect" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Order">
+      <EntityTypeMapping TypeName="Semenova_МастерПолModel.Order">
+        <MappingFragment StoreEntitySet="Order">
+          <ScalarProperty Name="Order_ID" ColumnName="Order_ID" />
+          <ScalarProperty Name="Product_ID" ColumnName="Product_ID" />
+          <ScalarProperty Name="Count" ColumnName="Count" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Sotrudnik_ID" ColumnName="Sotrudnik_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Partner">
+      <EntityTypeMapping TypeName="Semenova_МастерПолModel.Partner">
+        <MappingFragment StoreEntitySet="Partner">
+          <ScalarProperty Name="Partner_ID" ColumnName="Partner_ID" />
+          <ScalarProperty Name="Partner_Type" ColumnName="Partner_Type" />
+          <ScalarProperty Name="Partner_Name" ColumnName="Partner_Name" />
+          <ScalarProperty Name="Surname_Director" ColumnName="Surname_Director" />
+          <ScalarProperty Name="Name_Director" ColumnName="Name_Director" />
+          <ScalarProperty Name="Patronymic_Director" ColumnName="Patronymic_Director" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="INN" ColumnName="INN" />
+          <ScalarProperty Name="Rating" ColumnName="Rating" />
+          <ScalarProperty Name="Logo" ColumnName="Logo" />
+          <ScalarProperty Name="Places_Sales" ColumnName="Places_Sales" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Partner_Type">
+      <EntityTypeMapping TypeName="Semenova_МастерПолModel.Partner_Type1">
+        <MappingFragment StoreEntitySet="Partner_Type">
+          <ScalarProperty Name="ID_Type" ColumnName="ID_Type" />
+          <ScalarProperty Name="Type_name" ColumnName="Type_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PartnerProduct">
+      <EntityTypeMapping TypeName="Semenova_МастерПолModel.PartnerProduct">
+        <MappingFragment StoreEntitySet="PartnerProduct">
+          <ScalarProperty Name="PartherProduct_ID" ColumnName="PartherProduct_ID" />
+          <ScalarProperty Name="Partner_ID" ColumnName="Partner_ID" />
+          <ScalarProperty Name="Product_ID" ColumnName="Product_ID" />
+          <ScalarProperty Name="Count" ColumnName="Count" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PartnerSalesHistory">
+      <EntityTypeMapping TypeName="Semenova_МастерПолModel.PartnerSalesHistory">
+        <MappingFragment StoreEntitySet="PartnerSalesHistory">
+          <ScalarProperty Name="PartnerSalesHistory_ID" ColumnName="PartnerSalesHistory_ID" />
+          <ScalarProperty Name="Patner_ID" ColumnName="Patner_ID" />
+          <ScalarProperty Name="Product_ID" ColumnName="Product_ID" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Count" ColumnName="Count" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Postavshchik">
+      <EntityTypeMapping TypeName="Semenova_МастерПолModel.Postavshchik">
+        <MappingFragment StoreEntitySet="Postavshchik">
+          <ScalarProperty Name="Postavshchik_ID" ColumnName="Postavshchik_ID" />
+          <ScalarProperty Name="Postavshchik_Type" ColumnName="Postavshchik_Type" />
+          <ScalarProperty Name="Postavshchik_Name" ColumnName="Postavshchik_Name" />
+          <ScalarProperty Name="INN" ColumnName="INN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PostavshchikMaterialHistory">
+      <EntityTypeMapping TypeName="Semenova_МастерПолModel.PostavshchikMaterialHistory">
+        <MappingFragment StoreEntitySet="PostavshchikMaterialHistory">
+          <ScalarProperty Name="PostavshchikMaterialHistory1" ColumnName="PostavshchikMaterialHistory" />
+          <ScalarProperty Name="Postavshchik_ID" ColumnName="Postavshchik_ID" />
+          <ScalarProperty Name="Material_ID" ColumnName="Material_ID" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Count" ColumnName="Count" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Product">
+      <EntityTypeMapping TypeName="Semenova_МастерПолModel.Product">
+        <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="Product_ID" ColumnName="Product_ID" />
+          <ScalarProperty Name="ProductType_ID" ColumnName="ProductType_ID" />
+          <ScalarProperty Name="Product_Name" ColumnName="Product_Name" />
+          <ScalarProperty Name="Article" ColumnName="Article" />
+          <ScalarProperty Name="Min_Price" ColumnName="Min_Price" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Length" ColumnName="Length" />
+          <ScalarProperty Name="Width" ColumnName="Width" />
+          <ScalarProperty Name="Height" ColumnName="Height" />
+          <ScalarProperty Name="Weight_Without_Packaging" ColumnName="Weight_Without_Packaging" />
+          <ScalarProperty Name="Weight_From_Packaging" ColumnName="Weight_From_Packaging" />
+          <ScalarProperty Name="Quality_Certificate" ColumnName="Quality_Certificate" />
+          <ScalarProperty Name="Standard_Number" ColumnName="Standard_Number" />
+          <ScalarProperty Name="Сhange_History_Min_Price" ColumnName="Сhange_History_Min_Price" />
+          <ScalarProperty Name="Production_Time" ColumnName="Production_Time" />
+          <ScalarProperty Name="Cost_Price" ColumnName="Cost_Price" />
+          <ScalarProperty Name="Workshop_Number" ColumnName="Workshop_Number" />
+          <ScalarProperty Name="Kol_People_Production" ColumnName="Kol_People_Production" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Product_Type">
+      <EntityTypeMapping TypeName="Semenova_МастерПолModel.Product_Type">
+        <MappingFragment StoreEntitySet="Product_Type">
+          <ScalarProperty Name="ProductType_ID" ColumnName="ProductType_ID" />
+          <ScalarProperty Name="Product_Type1" ColumnName="Product_Type" />
+          <ScalarProperty Name="DefectedPercent" ColumnName="DefectedPercent" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sotrudnik">
+      <EntityTypeMapping TypeName="Semenova_МастерПолModel.Sotrudnik">
+        <MappingFragment StoreEntitySet="Sotrudnik">
+          <ScalarProperty Name="Sotrudnik_ID" ColumnName="Sotrudnik_ID" />
+          <ScalarProperty Name="Sotrudnik_Surname" ColumnName="Sotrudnik_Surname" />
+          <ScalarProperty Name="Sotrudnik_Name" ColumnName="Sotrudnik_Name" />
+          <ScalarProperty Name="Sotrudnik_Patronymic" ColumnName="Sotrudnik_Patronymic" />
+          <ScalarProperty Name="Birthday" ColumnName="Birthday" />
+          <ScalarProperty Name="Seria_Pasport" ColumnName="Seria_Pasport" />
+          <ScalarProperty Name="Nomer_Pasport" ColumnName="Nomer_Pasport" />
+          <ScalarProperty Name="Bank" ColumnName="Bank" />
+          <ScalarProperty Name="Family" ColumnName="Family" />
+          <ScalarProperty Name="Health" ColumnName="Health" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="MaterialPostavshchik" TypeName="Semenova_МастерПолModel.MaterialPostavshchik" StoreEntitySet="MaterialPostavshchik">
+      <EndProperty Name="Material">
+        <ScalarProperty Name="Material_ID" ColumnName="Material_ID" />
+      </EndProperty>
+      <EndProperty Name="Postavshchik">
+        <ScalarProperty Name="Postavshchik_ID" ColumnName="Postavshchik_ID" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>
